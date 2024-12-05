@@ -1,4 +1,113 @@
 <div class="nav m-0 w-100 p-3 bg-secondary gap-4">
-    <button routerLink="/home" routerLinkActive="active" class="btn btn-outline-light fw-bold border-3">Home</button>
+    <button 
+        routerLink="/home" 
+        routerLinkActive="active" 
+        class="btn btn-outline-light fw-bold border-3"
+    >Home</button>
+    <button 
+        routerLink="/about" 
+        routerLinkActive="active" 
+        class="btn btn-outline-light fw-bold border-3"
+    >About</button>
+    <button 
+        routerLink="/workshop1" 
+        routerLinkActive="active" 
+        class="btn btn-outline-light fw-bold border-3"
+    >Workshop 1</button>
+    <button 
+        routerLink="/calculator" 
+        routerLinkActive="active" 
+        class="btn btn-outline-light fw-bold border-3"
+    >Calculator</button>
 </div>
+<!-- <p>{{date|date:'dd MMM YYYY'}}</p> -->
+
+<!-- <router-outlet></router-outlet> -->
+
+<!-- <div class="container-fluid text-center">
+    <div>{{result[0]}}</div>
+    <div>
+        <input [type]="inputType.text" [value]="result[1]" class="text-success">
+    </div>
+    <div>
+        <button
+        (click)="showAlert()">
+            Click Me!
+        </button>
+    </div>
+    <div>
+        <input 
+        [(ngModel)]="firstName"
+        (keyup)="consoleFn()"
+        />
+    </div>
+    <div>
+        <img [src]="imageUrl" height="250px" width="500px">
+    </div>
+</div> -->
+
+<!-- <div class="container mt-5">
+    <div class="d-grid">
+        <label>{{f_NameLabel}}</label>
+        <input type="text" [(ngModel)]="firstName">
+
+        <br>
+        <label>{{l_NameLabel}}</label>
+        <input type="text" [(ngModel)]="lastName">
+
+        <br>
+        <label>{{n_NameLabel}}</label>
+        <input type="text" [(ngModel)]="nickname">
+
+        <br>
+        <label>{{ageLabel}}</label>
+        <input type="number" [(ngModel)]="age">
+
+        <br>
+        <label>{{birthdateLabel}}</label>
+        <input type="datetime" [(ngModel)]="birthdate">
+
+        <br>
+        <button>Submit</button>
+
+        <hr>
+
+    </div>
+
+    <p>{{firstName}} {{lastName}}</p>
+    <p>{{nickname}} {{age}}</p>
+    <p>{{birthdate|date:"dd/MM/YYYY"}}</p>
+</div> -->
+
+<!-- <div *ngIf="result.length" class="container-fluid">
+    <div>{{result[0]}}</div>
+    <div>{{result[1]}}</div>
+    <div>{{result[2]}}</div>
+    <div>{{result[3]}}</div>
+</div> -->
+
+
+<!-- <div  class="container-fluid">
+    <div *ngFor="let person of result; let i = index;">
+       {{i + 1}}. {{person}}
+    </div>
+</div> -->
+
+<!-- <div class="container w-75 h-50 mt-5">
+    <table class="table">
+        <thead>
+            <tr class="table-primary">
+                <th >No.</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of result; let i = index;" >
+                <td *ngIf="(i + 1) % 2 == 0">{{i + 1}}</td>
+                <td *ngIf="(i + 1) % 2 == 0">{{data}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
 <router-outlet></router-outlet>
